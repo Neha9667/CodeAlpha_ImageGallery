@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="nature">Nature</button>
+      <button class="filter-btn" data-category="city">City</button>
+      <button class="filter-btn" data-category="animals">Animals</button>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-item nature" data-src="images/nature.jpg">
+        <img src="images/nature.jpg" alt="Nature 1" />
+      </div>
+      <div class="gallery-item city" data-src="images/city.jpg">
+        <img src="images/city.jpg" alt="City 1" />
+      </div>
+      <div class="gallery-item nature" data-src="images/nature1.jpg">
+        <img src="images/nature1.jpg" alt="Nature 2" />
+      </div>
+      <div class="gallery-item animals" data-src="images/animals.jpg">
+        <img src="images/animals.jpg" alt="Animals 1" />
+      </div>
+      <div class="gallery-item city" data-src="images/city1.jpg">
+        <img src="images/city1.jpg" alt="City 2" />
+      </div>
+      <div class="gallery-item animals" data-src="images/animals1.jpg">
+        <img src="images/animals1.jpg" alt="Animals 2" />
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-content" id="lightbox-image" />
+      <a class="prev-btn">&#10094;</a>
+      <a class="next-btn">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
